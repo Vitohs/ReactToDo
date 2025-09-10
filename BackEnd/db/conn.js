@@ -2,7 +2,7 @@
 import mongoose from "mongoose"; //IMPORTANDO O HOMI
 
 async function main(){
-    await mongoose.connect('mongodb://localhost/27017/toDo') //PORTA DO BANCO, SE NÃO EXISTIR BANCO COM O NOME ELE CRIA
+    await mongoose.connect('mongodb://localhost:27017/toDo') //PORTA DO BANCO, SE NÃO EXISTIR BANCO COM O NOME ELE CRIA
     console.log('conexão feita com sucesso')
 }
 main().catch((erro)=>{

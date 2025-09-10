@@ -4,7 +4,7 @@ import TarefaController from '../controllers/tarefaController.js'
 
 const rota = Router()//INSTANCIANDO A ROTA
 
-// rota.delete('/:id', TarefaController.remove) //ROTA DELETE TASK
+rota.delete('/:id', TarefaController.remove) //ROTA DELETE TASK
 
 // rota.get('/:id', TarefaController.getOne) //PEGANDO UMA TASK
 
