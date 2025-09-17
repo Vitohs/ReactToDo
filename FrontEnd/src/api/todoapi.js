@@ -6,7 +6,7 @@ const api = axios.create({
         "Content-Type": "application/json"
     })
 })
-export const getATodos = ()=>api.get('/getAll')
+export const getTodos = ()=>api.get('/getAll')
 export const createTodo = (payload)=>api.post('/Create', payload)
 export const deleteTodo = (id)=>api.delete(`/${id}`)
 
