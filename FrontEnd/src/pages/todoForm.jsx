@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // nescessário para poder traba
 import { getTodos } from "../api/todoapi";
 import { deleteTodo } from "../api/todoapi";
 import { createTodo } from "../api/todoapi";
-import style from "../pages/TodoForm.module.css"
+import style from "./TodoForm.module.css"
 
 export default function TodoForm(){
     const [titulo, setTitulo] = useState("")
@@ -43,7 +43,7 @@ export default function TodoForm(){
 
             <div>
                 <label className={style.formLabel}>Data limite:</label>
-                <input type="date" required value={titulo} className={style.formInput} onChange={e => setDataLimite(e.target.value)} />
+                <input type="text" required value={dataLimite} className={style.formInput} onChange={e => setDataLimite(e.target.value)} />
 
             </div>
 

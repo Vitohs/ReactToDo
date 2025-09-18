@@ -18,7 +18,7 @@ app.use(express.json())
 //cors consgue conectar aplicações rodando em portas diferentes
 app.use(cors({
     credentials: true,//segurança
-    origin: 'http://localhost:5000'//porta do futuro front
+    origin: 'http://localhost:5173'//porta do futuro front
 }))
 
 app.use('/ToDo', rota)
